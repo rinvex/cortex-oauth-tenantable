@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-use Cortex\Auth\Models\Admin;
-use Cortex\Auth\Models\Member;
 use Cortex\Auth\Models\Manager;
 use Cortex\Oauth\Models\Client;
 use Diglactic\Breadcrumbs\Generator;
