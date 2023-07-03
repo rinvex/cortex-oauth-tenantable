@@ -9,11 +9,9 @@ Route::domain('{managerarea}')->group(function () {
     Route::name('managerarea.')
          ->middleware(['web', 'nohttpcache', 'can:access-managerarea'])
          ->prefix(route_prefix('managerarea'))->group(function () {
-
-            // Register OAuth Routes
+             // Register OAuth Routes
              Route::name('cortex.oauth.')->group(function () {
-
-                // Authorization process
+                 // Authorization process
                  Route::prefix('oauth')->group(function () {
                      Route::get('authorize')->name('authorize')->uses([AuthorizationController::class, 'authorizeRequest']);
                      Route::post('authorize')->name('approve')->uses([AuthorizationController::class, 'approve']);
@@ -35,14 +33,12 @@ Route::domain('{managerarea}')->group(function () {
              });
 
              Route::name('cortex.auth.')->group(function () {
-
                  // Manager clients Routes
                  Route::name('managers.')->prefix('managers')->group(function () {
                      Route::get('{manager}/clients')->name('clients')->uses([ClientsController::class, 'clientsForUser']);
                      Route::get('{manager}/auth-codes')->name('auth_codes')->uses([ClientsController::class, 'authCodesForUser']);
                      Route::get('{manager}/access-tokens')->name('access_tokens')->uses([ClientsController::class, 'accessTokensForUser']);
                  });
-
              });
          });
 });

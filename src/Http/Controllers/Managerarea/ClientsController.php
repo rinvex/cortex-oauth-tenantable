@@ -8,8 +8,8 @@ use Cortex\Oauth\Models\Client;
 use Cortex\Foundation\Http\FormRequest;
 use Cortex\Oauth\DataTables\Managerarea\ClientsDataTable;
 use Cortex\Oauth\DataTables\Managerarea\AuthCodesDataTable;
-use Cortex\Oauth\Http\Requests\Managerarea\ClientFormRequest;
 use Cortex\Foundation\Http\Controllers\AuthorizedController;
+use Cortex\Oauth\Http\Requests\Managerarea\ClientFormRequest;
 use Cortex\Oauth\DataTables\Managerarea\AccessTokensDataTable;
 use Cortex\Oauth\Http\Requests\Managerarea\ClientFormPostRequest;
 
@@ -75,7 +75,7 @@ class ClientsController extends AuthorizedController
      * Create new client.
      *
      * @param \Cortex\Oauth\Http\Requests\Managerarea\ClientFormRequest $request
-     * @param \Cortex\Oauth\Models\Client                             $client
+     * @param \Cortex\Oauth\Models\Client                               $client
      *
      * @return \Illuminate\View\View
      */
@@ -88,7 +88,7 @@ class ClientsController extends AuthorizedController
      * Edit given client.
      *
      * @param \Cortex\Oauth\Http\Requests\Managerarea\ClientFormRequest $request
-     * @param \Cortex\Oauth\Models\Client                             $client
+     * @param \Cortex\Oauth\Models\Client                               $client
      *
      * @return \Illuminate\View\View
      */
@@ -121,7 +121,7 @@ class ClientsController extends AuthorizedController
      * Store new client.
      *
      * @param \Cortex\Oauth\Http\Requests\Managerarea\ClientFormPostRequest $request
-     * @param \Cortex\Oauth\Models\Client                                 $client
+     * @param \Cortex\Oauth\Models\Client                                   $client
      *
      * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse
      */
@@ -134,7 +134,7 @@ class ClientsController extends AuthorizedController
      * Update given client.
      *
      * @param \Cortex\Oauth\Http\Requests\Managerarea\ClientFormPostRequest $request
-     * @param \Cortex\Oauth\Models\Client                                 $client
+     * @param \Cortex\Oauth\Models\Client                                   $client
      *
      * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse
      */
@@ -172,7 +172,7 @@ class ClientsController extends AuthorizedController
      * Destroy given page.
      *
      * @param \Cortex\Oauth\Http\Requests\Managerarea\ClientFormRequest $request
-     * @param \Cortex\Oauth\Models\Client                             $client
+     * @param \Cortex\Oauth\Models\Client                               $client
      *
      * @throws \Exception
      *
@@ -192,7 +192,7 @@ class ClientsController extends AuthorizedController
      * Revoke given page.
      *
      * @param \Cortex\Oauth\Http\Requests\Managerarea\ClientFormRequest $request
-     * @param \Cortex\Oauth\Models\Client                             $client
+     * @param \Cortex\Oauth\Models\Client                               $client
      *
      * @throws \Exception
      *
